@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f8fa" />
+  <title>Mini Wind Turbine — 3D Presentation</title>
+</head>
+<body>
+  <div id="app">
+    <div class="topbar">
+      <a class="brand" href="#" aria-label="Presentation home"><span class="brand-mark"></span> FIELDNOTES <span class="brand-divider">/</span> ENGINEERING</a>
+      <div class="top-meta"><span class="live-dot"></span> 3D PROJECT PRESENTATION</div>
+    </div>
+
+    <main class="stage">
+      <section class="copy-panel">
+        <div class="eyebrow" id="eyebrow">01 — OVERVIEW</div>
+        <h1 id="slide-title">A small idea.<br><em>Clean energy.</em></h1>
+        <p id="slide-body">A miniature wind turbine that uses moving air to turn a DC motor and demonstrate how wind energy can be converted into electricity.</p>
+        <div class="slide-rule"><span id="slide-progress"></span></div>
+        <div class="slide-footer">
+          <span id="slide-count">01 / 06</span>
+          <span class="hint">USE ← → TO EXPLORE</span>
+        </div>
+      </section>
+
+      <section class="visual-panel" aria-label="Interactive 3D wind turbine">
+        <div class="model-caption"><span class="caption-dot"></span><span id="model-caption">FULL ASSEMBLY · FRONT THREE-QUARTER</span></div>
+        <div id="scene"></div>
+        <div class="model-note" id="model-note">Drag to inspect · Scroll to zoom</div>
+        <div class="view-chip" id="view-chip">01 / OVERVIEW</div>
+      </section>
+    </main>
+
+    <nav class="controls" aria-label="Slide controls">
+      <div class="dots" id="dots"></div>
+      <div class="control-actions">
+        <button class="icon-button" id="spin-button" title="Toggle rotor animation" aria-label="Toggle rotor animation">Ⅱ <span>ROTATION</span></button>
+        <button class="icon-button" id="reset-button" title="Reset camera" aria-label="Reset camera">↺ <span>RESET VIEW</span></button>
+        <button class="arrow-button" id="prev-button" aria-label="Previous slide">←</button>
+        <button class="arrow-button next" id="next-button" aria-label="Next slide">→</button>
+      </div>
+    </nav>
+    <div class="bottom-line"><span>MINI WIND TURBINE</span><span>INTERACTIVE STUDY · 3D</span></div>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
